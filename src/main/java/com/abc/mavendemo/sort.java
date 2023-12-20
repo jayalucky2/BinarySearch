@@ -1,4 +1,4 @@
-package com.abc.mavendemo
+package com.abc.mavendemo;
 
 public class binarysearch
 {
