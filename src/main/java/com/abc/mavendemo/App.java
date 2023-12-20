@@ -26,15 +26,6 @@ class methods
  arr[i]=sc.nextInt();
                 }
         }
-        public void printelements(int arr[])
-        {
-                System.out.print("elements in the arr: ");
-                for(int i:arr)
-                {
-                        System.out.print(i+"   ");
-                }
-                System.out.println("");
-        }
         public void sort(int arr[])
         {
                 for(int i=0;i<arr.length;i++)
@@ -67,7 +58,7 @@ public class App
         obj.printelements(arr);
         System.out.print("Enter serach element:");
         int key = sc.nextInt();
-        int res=bs.binarySearch(arr, key, 0, arr.length-1);
+        int res=bs.sort(arr, key, 0, arr.length-1);
         if(res!=-404)
         {
                 System.out.print("element found at "+(res)+"th position");
