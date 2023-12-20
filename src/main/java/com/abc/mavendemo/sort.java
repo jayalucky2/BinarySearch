@@ -1,8 +1,8 @@
 package com.abc.mavendemo;
 
-public class binarysearch
+public class sort
 {
-	public int binarySearch(int arr[],int key,int left,int right)
+	public int sort(int arr[],int key,int left,int right)
 	{
 		if(left>right)
 		{
@@ -15,11 +15,11 @@ public class binarysearch
 		}
 		else if(arr[mid]<key)
 		{
-			return binarySearch(arr,key,mid+1,right);
+			return sort(arr,key,mid+1,right);
 		}
 		else
 		{
-			return binarySearch(arr,key,left,mid-1);
+			return sort(arr,key,left,mid-1);
 		}
 	}
 }
